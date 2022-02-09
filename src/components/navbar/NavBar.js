@@ -1,24 +1,36 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './NavBar.css'
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import hamBurger from '../../assets/shared/icon-hamburger.png'
+import {NavbarContext} from './NavbarContext';
+
 
 const logo = require('../../assets/shared/logo.png')
 
 
 function NavBar() {
 
+    const {drawerMode , setDrawer} = useContext(NavbarContext)
+
+    useEffect(() => {
+      console.log(drawerMode);
+    }, []);
+    
+
     const location = useLocation();
 
     return (
         <div className='navbar'>
-            <img src={logo} />
+            <img className='logo' src={logo} />
             <div className='line' />
-            <ul className='option-container'>
-                <li style={{borderBottom:location.pathname == "/"?"solid 3px white":null}}>00 <span className='option-title'>HOME</span></li>
-                <li>01 <span style={{borderBottom:location.pathname == "/destination"?"solid 3px white":null}} className='option-title' >DESTINATION</span></li>
-                <li>02 <span style={{borderBottom:location.pathname == "/crew"?"solid 3px white":null}} className='option-title'>CREW</span></li>
-                <li>03 <span style={{borderBottom:location.pathname == "/technology"?"solid 3px white":null}} className='option-title'>TECHNOLOGY</span></li>
-            </ul>
+            <div className='option-container'>
+                <Link to={"/"} className='option' style={{borderBottom:location.pathname == "/"?"solid 3px white":null}}>00 <span className='option-title'>HOME</span></Link>
+                <Link to={"/destination"} className='option' style={{borderBottom:location.pathname == "/destination"?"solid 3px white":null}}>01 <span  className='option-title' >DESTINATION</span></Link>
+                <Link to={"/crew"} className='option' style={{borderBottom:location.pathname == "/crew"?"solid 3px white":null}} >02 <span className='option-title'>CREW</span></Link>
+                <Link to={"/"} className='option' style={{borderBottom:location.pathname == "/technology"?"solid 3px white":null}}>03 <span  className='option-title'>TECHNOLOGY</span></Link>
+            </div>
+           { !drawerMode && ( <img onClick={() => setDrawer(true)} className='hamburger' src={hamBurger}/>)}
+           
         </div>
     )
 }

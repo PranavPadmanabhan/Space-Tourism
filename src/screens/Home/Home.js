@@ -1,12 +1,26 @@
 import './Home.css'
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import NavBar from '../../components/navbar/NavBar';
+import { DrawerContext } from '../../components/navbar/NavbarContext';
 
 export class Home extends Component {
+
+     constructor(props) {
+       super(props)
+     
+       this.state = {
+          
+       }
+     }
+
+
+
     render() {
+
         return (
             <div className='home'>
                 <NavBar />
+                <DrawerContext />
                 <div className="content">
                     <div className="details">
                         <span className="text1">SO, YOU WANT TO TRAVEL TO</span>

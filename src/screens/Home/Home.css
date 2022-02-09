@@ -112,6 +112,7 @@
 .explore-text {
     font-size: 2vw;
     font-weight: 300;
+    font-family: 'Playfair Display', serif;
 }
 .explore-button:hover {
     box-shadow: 1px 1px 1px 3.5rem rgba(255, 255, 255, 0.337);
@@ -129,6 +130,8 @@
     position: relative;
     animation: bounce 0.7s linear 0.8s forwards;
     transition: 0.7s ease-in;
+    opacity: 0;
+
 }
 .text2{
     color: white;
@@ -138,6 +141,7 @@
     position: relative;
     animation: translate-right 0.8s linear 0.3s  forwards;
     transition: 0.8s ease-in;
+    font-family: 'Playfair Display', serif;
 }
 .text3{
     color: white;
@@ -146,6 +150,7 @@
     position: relative;
     animation: translate-right 0.8s linear 0.5s forwards;
     transition: 0.8s ease-in;
+    font-weight: 300;
 }
 
 @media (max-width : 600px) {
