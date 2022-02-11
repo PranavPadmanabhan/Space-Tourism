@@ -16,14 +16,13 @@
 }
 .line {
     height: 1px;
-    width: 33%;
+    width: 40%;
     background-color: rgb(158, 158, 158);
-    margin-right: -15vw;
 }
 .option-container {
     background-color: rgba(182, 182, 182, 0.268);
     height: 70%;
-    width: 55%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,7 +31,8 @@
     backdrop-filter: blur(10px);
     border-radius: 1px;
     box-sizing: border-box;
-    padding-right: 3rem ;
+    padding-right: 5vw;
+    margin-right: -2vw;
 }
 
 .option {
@@ -66,6 +66,7 @@
     margin-left: 2vw;
     min-height: 50px;
     min-width: 50px;
+    margin-right: 5vw;
 }
 
 .hamburger {

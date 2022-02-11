@@ -4,6 +4,7 @@ import Home from './screens/Home/Home';
 import Destination from './screens/destination/Destination';
 import NavbarContextProvider from './components/navbar/NavbarContext';
 import Crew from './screens/crew/Crew';
+import Technology from './screens/technology/Technology';
 
 
 
@@ -15,6 +16,7 @@ function App() {
           <Route exact path={"/"} element={<Home />} />
           <Route path={"/destination"} element={<Destination />} />
           <Route path={"/crew"} element={<Crew />} />
+          <Route path={"/technology"} element={<Technology />} />
         </Routes>
       </NavbarContextProvider>
     </Router>

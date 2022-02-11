@@ -27,7 +27,7 @@ function NavBar() {
                 <Link to={"/"} className='option' style={{borderBottom:location.pathname == "/"?"solid 3px white":null}}>00 <span className='option-title'>HOME</span></Link>
                 <Link to={"/destination"} className='option' style={{borderBottom:location.pathname == "/destination"?"solid 3px white":null}}>01 <span  className='option-title' >DESTINATION</span></Link>
                 <Link to={"/crew"} className='option' style={{borderBottom:location.pathname == "/crew"?"solid 3px white":null}} >02 <span className='option-title'>CREW</span></Link>
-                <Link to={"/"} className='option' style={{borderBottom:location.pathname == "/technology"?"solid 3px white":null}}>03 <span  className='option-title'>TECHNOLOGY</span></Link>
+                <Link to={"/technology"} className='option' style={{borderBottom:location.pathname == "/technology"?"solid 3px white":null}}>03 <span  className='option-title'>TECHNOLOGY</span></Link>
             </div>
            { !drawerMode && ( <img onClick={() => setDrawer(true)} className='hamburger' src={hamBurger}/>)}
            
