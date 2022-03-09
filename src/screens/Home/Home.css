@@ -67,7 +67,6 @@
     width: 100vw;
     max-width: 100vw;
     max-height: 100vh;
-    background-color: aqua;
     background-image: url('../../assets/home/background-home-desktop.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -159,7 +158,6 @@
         width: 100vw;
         max-width: 100vw;
         max-height: 100vh;
-        background-color: aqua;
         background-image: url('../../assets/home/background-home-mobile.jpg');
         background-position: center;
         background-repeat: no-repeat;
