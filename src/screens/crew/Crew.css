@@ -69,6 +69,8 @@
     height: 100%;     
     object-fit: contain;
     object-position: bottom;
+    margin-top: 0;
+
 }
 .dot {
     height: 20px;
@@ -83,6 +85,8 @@
     width: 23%;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
+
 }
 
 @media (max-width :600px){
@@ -160,6 +164,8 @@
         object-position: bottom;
         margin-bottom: 2vh;
         border-bottom: 0.1px solid rgba(128, 128, 128, 0.59);
+        margin-top: 0;
+
     }
     .dot {
         height: 10px;
@@ -175,5 +181,95 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2vh;
+        margin-top: 0;
+
+    }
+}
+
+@media (min-height:1500px){
+    .crew {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../../assets/crew/background-crew-desktop.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: flex-start;
+        color: rgb(220, 219, 219);
+    }
+    .crew-content {
+        width: 80%;
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .crew-details {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-bottom: 10vh;
+    
+    }
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+        height: 70%;
+    }
+    .dots-container {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -80%;
+    }
+    .crew-image {
+        width: 45%;
+        height: 100%;     
+        object-fit: contain;
+        object-position: center;
+        margin-top: -30%;
+    }
+    .crew-page-title {
+        color: rgb(163, 163, 163);
+        font-size: 1.8vh;
+        align-self: flex-start;
+        margin-bottom: 5vh;
+    }
+    .position {
+        margin-top: 2vh;
+        font-size: 1.9vw;
+        font-weight: 300;
+        color: rgb(201, 201, 201);
+    }
+    .crew-name {
+        font-size: 3.5vw;
+        font-family: 'Playfair Display', serif;
+    }
+    .crew-description {
+        max-width: 100%;
+        line-height: 1.5rem;
+        margin-top: 3vh;
+        font-size: 1.5vw;
+    }
+    .dot {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border-radius: 100%;
+        cursor: pointer;
     }
 }

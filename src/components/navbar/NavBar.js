@@ -12,10 +12,7 @@ function NavBar() {
 
     const {drawerMode , setDrawer} = useContext(NavbarContext)
 
-    useEffect(() => {
-      console.log(drawerMode);
-    }, []);
-    
+
 
     const location = useLocation();
 
