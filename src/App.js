@@ -10,7 +10,7 @@ import Technology from './screens/technology/Technology';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <NavbarContextProvider>
         <Routes>
           <Route exact path={"/"} element={<Home />} />
